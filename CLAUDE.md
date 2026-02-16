@@ -8,9 +8,11 @@
 
 | 项目 | 值 |
 |------|----|
-| **网站** | http://81.70.28.90 |
-| **服务器** | 腾讯云 Ubuntu 22.04（2核 4G） |
+| **网站** | https://www.liujiaye.cn |
+| **域名** | www.liujiaye.cn（阿里云 DNS，ICP 备案：冀ICP备2025114703号-1） |
+| **服务器** | 腾讯云 Ubuntu 22.04（2核 4G），IP: 81.70.28.90 |
 | **SSH** | `ssh ubuntu@81.70.28.90` |
+| **SSL 证书** | 阿里云购买，存放 `/etc/nginx/ssl/liujiaye.cn.{pem,key}` |
 | **服务器项目路径** | `/home/ubuntu/exam-factory` |
 | **GitHub** | https://github.com/chaye7417/exam-factory |
 
@@ -154,3 +156,4 @@ ssh ubuntu@81.70.28.90 "cat /etc/nginx/sites-available/exam-factory"
 - 没有 HTTPS（需要域名 + Let's Encrypt）
 - AI 输入文本超过 15000 字符会被截断
 - 每日使用限制 10 次（`MAX_DAILY_USES`）
+
